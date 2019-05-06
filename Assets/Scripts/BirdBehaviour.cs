@@ -7,8 +7,8 @@ public class BirdBehaviour : MonoBehaviour
 
 {
     private Rigidbody2D rbBird;
-    private float fUp = 250f;
-    private bool dead;
+    private float fUp = 200f;
+    public bool dead;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +31,7 @@ public class BirdBehaviour : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         dead = true;
+        Destroy(gameObject);
         Debug.Log("Dead");
     }
 }

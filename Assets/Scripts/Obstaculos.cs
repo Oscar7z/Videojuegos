@@ -5,7 +5,7 @@ using UnityEngine;
 public class Obstaculos : MonoBehaviour
 {
 
-    public float v = 5f;
+    private float v = 0.35f;
     public float mH = 24.33f;
     public float mV; 
     // Start is called before the first frame update
